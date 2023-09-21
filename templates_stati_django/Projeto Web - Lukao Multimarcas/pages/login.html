@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/css/styles.css">
+    <link rel="shortcut icon" href="../public/icons/logoIcon.svg" type="image/x-icon">
+    <title>Fazer Login</title>
+</head>
+<body>
+    <header>
+        <a href="/"><img src="../public/icons/logo.svg" alt="logo"></a>
+        <form action="" class="searchBar">
+            <select name="categorias" id="buscaCategorias">
+                <option value="categorias">Categorias</option>
+                <option value="camisas">Camisas</option>
+                <option value="sandalias">Sandálias</option>
+                <option value="moleton">Moleton</option>
+                <option value="shorts">Shorts</option>
+                <option value="meias">Meias</option>
+                <option value="social">Social</option>
+            </select>
+            <input type="text" placeholder="Pesquise aqui...">
+            <button><img src="../public/icons/search.svg" alt="search" title="Pesquisar"></button>
+        </form>
+        <nav>
+            <ul>
+                <li><a href="/pages/carrinho.html"><img src="/public/icons/bag.svg" alt="sacola de compras"></a></li>
+                <li><a href="/pages/login.html"><img src="/public/icons/user.svg" alt="perfil"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="loginMain">
+        <section id="login">
+            <h1>Login</h1>
+            <br>
+            <form action="../index.html">
+                <div class="formItem">
+                    <label for="">Email:</label>
+                    <input type="email" placeholder="Seu email...">
+                </div>
+                <div class="formItem">
+                    <label for="">Senha:</label>
+                    <input type="password" placeholder="Sua senha...">
+                </div>
+                <br>
+                <div id="formBtns">
+                    <a href="../index.html"><button type="button"><img src="../public/icons/backIcon.svg" alt="back">  Voltar</button></a> 
+                    <button type="submit">Pronto</button>
+                </div>
+                <p>Ainda não é cadastrado? <a href="cadastro.html">Cadastre-se</a></p>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div id="desktopFooter">
+            <address>
+                <section id="contatos-links">
+                    <div class="redes-sociais">
+                        <h2>Redes sociais</h2>
+    
+                        <a href="#"><img src="../public/icons/insta.png" alt="Instagram"></a>
+                        <a href="#"><img src="../public/icons/linkedin.png" alt="Linkedin"></a>
+                        <a href="#"><img src="../public/icons/tt.png" alt="Twitter"></a>
+                        <a href="#"><img src="../public/icons/Whats.png" alt="Whatsapp"></a>
+                    </div>
+    
+                    <div class="emial">
+                        <h2>E-mail commercial</h2>
+    
+                        <a href="mailto:lukao.multimarcas@lkm.com">lukao.multimarcas@lkm.com</a>
+                    </div>
+    
+                </section>
+    
+                <section id="endereco">
+    
+                    <div>
+                        <h2>Endereço</h2>
+    
+                        <div id="endereco-coluna">
+                            <div>
+                                <p><strong>CEP:</strong> 23506-713</p>
+                                <p><strong>Cidade:</strong> Lagarto</p>
+                                <p><strong>Bairro:</strong> Industrial</p>
+                            </div>
+    
+                            <div>
+                                <p><strong>Logradouro:</strong> Castro Alves</p>
+                                <p><strong>Estado:</strong> Sergipe</p>
+                                <p><strong>Número:</strong> 4106</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+    
+            </address>
+        </div>
+        <div id="mobileFooter">
+            <div class="redes-sociais">
+                <a href="#"><img src="../public/icons/insta.png" alt="Instagram"></a>
+                <a href="#"><img src="../public/icons/linkedin.png" alt="Linkedin"></a>
+                <a href="#"><img src="../public/icons/tt.png" alt="Twitter"></a>
+                <a href="#"><img src="../public/icons/Whats.png" alt="Whatsapp"></a>
+            </div>
+            <br>
+            <p>Lukao Multimarcas © 2022</p>
+        </div>
+
+    </footer>
+</body>
+</html>

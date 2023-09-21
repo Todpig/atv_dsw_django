@@ -1,0 +1,33 @@
+{% extends "base.html"%} {%load static%}
+
+<body>
+  {% block content %}
+  <main id="loginMain">
+    <section id="login">
+      <h1>Login</h1>
+      <br />
+      <form action="../index.html">
+        <div class="formItem">
+          <label for="">Email:</label>
+          <input type="email" placeholder="Seu email..." />
+        </div>
+        <div class="formItem">
+          <label for="">Senha:</label>
+          <input type="password" placeholder="Sua senha..." />
+        </div>
+        <br />
+        <div id="formBtns">
+          <a href="../index.html"
+            ><button type="button">
+              <img src="{% static 'public/icons/backIcon.svg'%}" alt="back" />
+              Voltar
+            </button></a
+          >
+          <button type="submit">Pronto</button>
+        </div>
+        <p>Ainda não é cadastrado? <a href="cadastro.html">Cadastre-se</a></p>
+      </form>
+    </section>
+  </main>
+  {% endblock %}
+</body>

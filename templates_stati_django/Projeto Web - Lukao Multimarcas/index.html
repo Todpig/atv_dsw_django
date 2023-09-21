@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lukao Multimarcas</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- Fim Bootstrap -->
+    <link rel="stylesheet" href="styles/css/styles.css">
+    <link rel="shortcut icon" href="/public/icons/logoIcon.svg" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <a href="/"><img src="public/icons/logo.svg" alt="logo"></a>
+        <form action="" class="searchBar">
+            <select name="categorias" id="buscaCategorias">
+                <option value="categorias">Categorias</option>
+                <option value="camisas">Camisas</option>
+                <option value="sandalias">Sandálias</option>
+                <option value="moleton">Moleton</option>
+                <option value="shorts">Shorts</option>
+                <option value="meias">Meias</option>
+                <option value="social">Social</option>
+            </select>
+            <input type="text" placeholder="Pesquise aqui...">
+            <button><img src="/public/icons/search.svg" alt="search" title="Pesquisar"></button>
+        </form>
+        <nav>
+            <ul>
+                <li><a href="/pages/carrinho.html"><img src="/public/icons/bag.svg" alt="sacola de compras"></a></li>
+                <li><a href="/pages/login.html"><img src="/public/icons/user.svg" alt="perfil"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="homeMain">
+
+        <div id="chatOnline">
+            <a href="https://web.whatsapp.com/send?phone=5599111112222" target="_blank"><img src="public/icons/chat.svg"
+                    alt="whatsapp"></a>
+        </div>
+
+        <!-- Carrossel -->
+        <div id="carrossel">
+            <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="true" id="div1">
+
+                <div class="carousel-indicators">
+
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active man-btn" aria-current="true" aria-label="Slide 1">
+                    </button>
+
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        class="man-btn" aria-label="Slide 2">
+                    </button>
+
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        class="man-btn" aria-label="Slide 3">
+                    </button>
+
+                    <button type="button" class="man-btn" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide-to="3" aria-label="Slide 4">
+                    </button>
+
+                    <button type="button" class="man-btn" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide-to="4" aria-label="Slide 5">
+                    </button>
+                </div>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/public/carrossel/Banner.png" class="d-block w-100"
+                            alt="banner de promoção 30% off em qualuqe camiseta">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/public/carrossel/Banner-1.png" class="d-block w-100"
+                            alt="As melhores camisas do mercado">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/public/carrossel/Banner-2.png" class="d-block w-100" alt="vários produtos 10% off">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/public/carrossel/Banner-3.png" class="d-block w-100" alt="Meias com 405 off">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/public/carrossel/Banner-4.png" class="d-block w-100" alt="Moleton 10% off">
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev man-arrow" type="button"
+                    data-bs-target="#carouselExampleIndicators" id="bola" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next man-arrow" type="button"
+                    data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <!-- Fim Carrossel -->
+
+        <section id="categorias">
+            <h2>CATEGORIAS</h2>
+            <div class="itemBox">
+                <a href="pages/categorias/camisetas.html">
+                    <div class="itemCategorias">
+                        <h3>CAMISETAS DE TIME</h3>
+                        <img src="public/placeholder/produtoPlaceholder.svg" alt="placeholder">
+                    </div>
+                </a>
+                <a href="pages/categorias/meias.html">
+                    <div class="itemCategorias">
+                        <h3>MEIAS</h3>
+                        <img src="public/placeholder/Meia.png" alt="placeholder">
+                    </div>
+                </a>
+                <a href="pages/categorias/moletom.html">
+                    <div class="itemCategorias">
+                        <h3>MOLETONS</h3>
+                        <img src="public/placeholder/Moletom.png" alt="placeholder">
+                    </div>
+                </a>
+                <a href="pages/categorias/sandalias.html">
+                    <div class="itemCategorias">
+                        <h3>SANDALIAS</h3>
+                        <img src="public/placeholder/Sandalia.png" alt="placeholder">
+                    </div>
+                </a>
+                <a href="pages/categorias/shorts.html">
+                    <div class="itemCategorias">
+                        <h3>SHORTS</h3>
+                        <img src="public/placeholder/Short.png" alt="placeholder">
+                    </div>
+                </a>
+                <a href="pages/categorias/social.html">
+                    <div class="itemCategorias">
+                        <h3>SOCIAL</h3>
+                        <img src="public/placeholder/Social.png" alt="placeholder">
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section id="ofertasDoDia">
+            <h2>OFERTAS DO DIA</h2>
+            <a href="/pages/produto.html">
+                <div class="itemBox">
+                    <div class="itemProdutos">
+                        <img src="public/placeholder/Camisa de time/pngwing.com (27).png" alt="produto">
+                        <div>
+                            <h3>Camisa De Futebol</h3>
+                            <img src="public/icons/stars.svg" alt="stars">
+                            <br>
+                            <span><strong>R$ 189,90</strong></span>
+                            <br>
+                            <span>Ou 3x de R$ 63,30</span>
+                        </div>
+                    </div>
+            </a>
+            <a href="/pages/produto.html">
+
+                <div class="itemProdutos">
+                    <img src="public/placeholder/Moletom/pngwing.com (21).png" alt="produto">
+                    <div>
+                        <h3>Moletom</h3>
+                        <img src="public/icons/stars.svg" alt="stars">
+                        <br>
+                        <span><strong>R$ 189,00</strong></span>
+                        <br>
+                        <span>Ou 3x de R$ 63,30</span>
+                    </div>
+                </div>
+            </a>
+            <a href="/pages/produto.html">
+
+                <div class="itemProdutos">
+                    <img src="public/placeholder/Meias/pngwing.com (2).png" alt="produto">
+                    <div>
+                        <h3>Meia</h3>
+                        <img src="public/icons/stars.svg" alt="stars">
+                        <br>
+                        <span><strong>R$30,90</strong></span>
+                        <br>
+                        <span>Ou 2x de R$ 15,00</span>
+                    </div>
+                </div>
+            </a>
+            <a href="/pages/produto.html">
+
+                <div class="itemProdutos">
+                    <img src="public/placeholder/Meias/pngwing.com (54).png" alt="produto">
+                    <div>
+                        <h3>Meia</h3>
+                        <img src="public/icons/stars.svg" alt="stars">
+                        <br>
+                        <span><strong>R$ 20,00</strong></span>
+                        <br>
+                        <span>Ou 2x de R$ 10,00</span>
+                    </div>
+                </div>
+            </a>
+            <a href="/pages/produto.html">
+
+                <div class="itemProdutos">
+                    <img src="public/placeholder/Sandalia/02.png" alt="produto">
+                    <div>
+                        <h3>Sandalia</h3>
+                        <img src="public/icons/stars.svg" alt="stars">
+                        <br>
+                        <span><strong>R$ 30,00</strong></span>
+                        <br>
+                        <span>Ou 2x de R$ 15,00</span>
+                    </div>
+                </div>
+            </a>
+            <a href="/pages/produto.html">
+
+                <div class="itemProdutos">
+                    <img src="public/placeholder/Short/02.png" alt="produto">
+                    <div>
+                        <h3>Short</h3>
+                        <img src="public/icons/stars.svg" alt="stars">
+                        <br>
+                        <span><strong>R$ 60,00</strong></span>
+                        <br>
+                        <span>Ou 3x de R$ 20,00</span>
+                    </div>
+                </div>
+            </a>
+            <a href="/pages/produto.html">
+
+                <div class="itemProdutos">
+                    <img src="public/placeholder/Moletom/pngwing.com (22).png" alt="produto">
+                    <div>
+                        <h3>Moletom</h3>
+                        <img src="public/icons/stars.svg" alt="stars">
+                        <br>
+                        <span><strong>R$ 180,00</strong></span>
+                        <br>
+                        <span>Ou 3x de R$ 63,30</span>
+                    </div>
+                </div>
+            </a>
+            <a href="/pages/produto.html">
+
+                <div class="itemProdutos">
+                    <img src="public/placeholder/Camisa de time/pngwing.com (44).png" alt="produto">
+                    <div>
+                        <h3>Camisa de Futebol</h3>
+                        <img src="public/icons/stars.svg" alt="stars">
+                        <br>
+                        <span><strong>R$ 180,00</strong></span>
+                        <br>
+                        <span>Ou 3x de R$ 63,30</span>
+                    </div>
+                </div>
+            </a>
+            </div>
+        </section>
+
+        <section id="bannerPropaganda">
+            <img src="public/images/banner1.svg" alt="banner">
+            <img src="public/images/banner2.svg" alt="banner">
+            <img src="public/images/banner3.svg" alt="banner">
+        </section>
+
+       
+
+    </main>
+    <footer>
+        <div id="desktopFooter">
+            <address>
+                <section id="contatos-links">
+                    <div class="redes-sociais">
+                        <h2>Redes sociais</h2>
+
+                        <a href="#"><img src="public/icons/insta.png" alt="Instagram"></a>
+                        <a href="#"><img src="public/icons/linkedin.png" alt="Linkedin"></a>
+                        <a href="#"><img src="public/icons/tt.png" alt="Twitter"></a>
+                        <a href="#"><img src="public/icons/Whats.png" alt="Whatsapp"></a>
+                    </div>
+
+                    <div class="emial">
+                        <h2>E-mail commercial</h2>
+
+                        <a href="mailto:lukao.multimarcas@lkm.com">lukao.multimarcas@lkm.com</a>
+                    </div>
+
+                </section>
+
+                <section id="endereco">
+
+                    <div>
+                        <h2>Endereço</h2>
+
+                        <div id="endereco-coluna">
+                            <div>
+                                <p><strong>CEP:</strong> 23506-713</p>
+                                <p><strong>Cidade:</strong> Lagarto</p>
+                                <p><strong>Bairro:</strong> Industrial</p>
+                            </div>
+
+                            <div>
+                                <p><strong>Logradouro:</strong> Castro Alves</p>
+                                <p><strong>Estado:</strong> Sergipe</p>
+                                <p><strong>Número:</strong> 4106</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </address>
+        </div>
+        <div id="mobileFooter">
+            <div class="redes-sociais">
+                <a href="#"><img src="public/icons/insta.png" alt="Instagram"></a>
+                <a href="#"><img src="public/icons/linkedin.png" alt="Linkedin"></a>
+                <a href="#"><img src="public/icons/tt.png" alt="Twitter"></a>
+                <a href="#"><img src="public/icons/Whats.png" alt="Whatsapp"></a>
+            </div>
+            <br>
+            <p>Lukao Multimarcas © 2022</p>
+        </div>
+
+
+    </footer>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+    </script>
+    <!-- Fim Bootstrap -->
+    <script src="scripts/js/main.js"></script>
+</body>
+
+</html>
