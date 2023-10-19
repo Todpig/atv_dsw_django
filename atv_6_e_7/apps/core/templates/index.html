@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Title</title>
-</head>
-<body>
-<h1>Hello world</h1>
-
-{% for disc in discs %}
-<p>{{disc.name}}</p>
-{% endfor %}
-</body>
+  </head>
+  <body>
+    <h1>Hello world</h1>
+    <ul>
+      {% for disc in discs %}
+      <li><a href="{% url 'disc' disc.id %}" target="_blank">{{disc.name}}</a></li>
+      {% endfor %}
+    </ul>
+  </body>
 </html>
