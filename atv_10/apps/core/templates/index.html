@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+  </head>
+  <body>
+    <h1>Discos</h1>
+    <a href="cadastrar-disco">cadastrar disco</a>
+    <a href="todos-discos">Todos os discos</a>
+    <ul>
+      {% for disc in discs %}
+      <li><a href="{% url 'disc' disc.id %}" target="_blank">{{disc.name}}</a></li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>

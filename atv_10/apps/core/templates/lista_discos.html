@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Discos</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lista de Discos</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Descrição</th>
+                <th>País</th>
+                <th>Ações</th> <!-- Nova coluna para botões de ação -->
+            </tr>
+        </thead>
+        <tbody>
+            {% for disco in discs %}
+            <tr>
+                <td>{{ disco.name }}</td>
+                <td>{{ disco.description }}</td>
+                <td>{{ disco.country }}</td>
+                <td>
+                    <a href="{% url 'visualizar_disco' disco.pk %}">Visualizar</a>
+                    <a href="{% url 'editar_disco' disco.pk %}">Editar</a>
+                    <a href="{% url 'confirmar_exclusao_disco' disco.pk %}">Excluir</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
